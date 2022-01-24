@@ -55,3 +55,26 @@ file.seek(0)
 print(file.read())
 
 file.close()
+
+
+#os module
+import os
+
+#create a new directory
+#os.mkdir("dirname")
+os.mkdir("myfolder")
+
+#remove a directory
+os.rmdir('myfolder')
+
+#change dir
+os.chdir("Dictionary")
+
+
+#get current directory Name
+#os.getcwd()
+aa=os.getcwd()
+print(aa)
+
+os.chdir("../Files IO")
+print(os.getcwd())
