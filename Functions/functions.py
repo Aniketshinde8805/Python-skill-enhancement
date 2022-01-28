@@ -184,3 +184,28 @@ def add(*num):
         s=s+i
     print(s)
 add(1,2,3,4,4,5,)  
+
+
+
+
+# *args
+# When you prefix a parameter with an asterisk * , it collects all the unmatched positional arguments into a tuple.
+#  Because it is a normal tuple object, you can perform any operation that a tuple supports, like indexing, iteration etc.
+# Following function prints all the arguments passed to the function as a tuple.
+
+def print_arguments(*args):
+    print(args)
+
+print_arguments(1, 54, 60, 8, 98, 12)
+# Prints (1, 54, 60, 8, 98, 12)
+# You don’t need to call this keyword parameter args, but it is standard practice.
+
+# **kwargs
+# The ** syntax is similar, but it only works for keyword arguments. 
+# It collects them into a new dictionary, where the argument names are the keys, and their values are the corresponding dictionary values.
+
+def print_arguments(**kwargs):
+    print(kwargs)
+
+print_arguments(name='Bob', age=25, job='dev')
+# Prints {'name': 'Bob', 'age': 25, 'job': 'dev'}
